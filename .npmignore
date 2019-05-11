@@ -8,6 +8,7 @@ coverage
 jest.config.js
 .eslintrc.js
 cypress.json
+.browserslistrc
 postcss.config.js
 babel.config.js
 .editorconfig

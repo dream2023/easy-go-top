@@ -6,7 +6,7 @@ module.exports = {
   outputDir: path.resolve(__dirname, './docs/'),
   css: { extract: isDevelopment },
   configureWebpack: {
-    entry: './documentation/main.js',
+    entry: isDevelopment ? './example/main.js' : './documentation/main.js',
     output: {
       libraryExport: 'default'
     }
