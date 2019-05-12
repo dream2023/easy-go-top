@@ -5,6 +5,7 @@ documentation
 public
 vue.config.js
 coverage
+example
 jest.config.js
 .eslintrc.js
 cypress.json
@@ -14,5 +15,7 @@ babel.config.js
 .editorconfig
 .cypress.json
 dist/demo.html
+.env.dev-doc
+.env.dev-example
 dist/easy-go-top.common.js
 dist/easy-go-top.common.js.map

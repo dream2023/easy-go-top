@@ -1,6 +1,6 @@
 {
   "name": "easy-go-top",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "private": false,
   "scripts": {
     "build:lib": "vue build -t lib --name easy-go-top -d ./dist/ ./src/index.js",
