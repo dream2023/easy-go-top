@@ -6,7 +6,7 @@
   >
     <slot>
       <span
-        style="color: inherit"
+        style="color: inherit;height: 100%;width: 100%;"
         v-html="params.innerHTML"
       ></span>
     </slot>
@@ -95,6 +95,7 @@ export default {
         width: this.computedWidth + 'px',
         height: this.computedHeight + 'px',
         lineHeight: this.computedHeight + 'px',
+        fontSize: this.computedWidth + 'px',
         color: params.color,
         zIndex: params.zIndex,
         right: params.right + 'px',
@@ -148,7 +149,8 @@ export default {
 #easy-go-top * {
   width: 48%;
   height: 48%;
-  margin-top: -5px;
-  vertical-align: middle;
+  font-size: 48%;
+  margin-top: 5px;
+  vertical-align: text-top;
 }
 </style>

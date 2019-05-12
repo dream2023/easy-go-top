@@ -15,6 +15,8 @@
 
 ## 效果图
 
+![演示图](./public/example.gif)
+
 ## 文档和示例
 
 [https://dream2023.github.io/easy-go-top/](https://dream2023.github.io/easy-go-top/)
@@ -51,7 +53,7 @@ export default {
   components: {
     EasyGoTop
   },
-  // 如果需要使用js触发回到顶部, 则需要引入mixin
+  // 如果需要使用js触发回到顶部, 则需要引入mixin, 否则不需要
   minxins: [easyGoTopMixin]
 }
 ```
@@ -69,7 +71,7 @@ export default {
 
 ```html
 <!-- 定制化: 局部引入, 或者全局引入后未设置参数, 想要定制化, 则需要指定参数 -->
-<easy-go-top :size="52" color="#fff" backgroundColor="rgb(231, 234, 241)" />
+<easy-go-top :size="52" color="#9aaabf" backgroundColor="rgb(231, 234, 241)" />
 ```
 
 ### js 调用
@@ -178,3 +180,9 @@ props: {
   }
 }
 ```
+
+## 参考链接
+
+- [vue-element-admin 全局组件 back-to-top](https://github.com/PanJiaChen/vue-element-admin/tree/master/src/components/BackToTop)
+- [Vanilla Back To Top](https://github.com/vfeskov/vanilla-back-to-top)
+- [bga-back-top-vue](https://github.com/bingoogolapple/bga-back-top-vue)

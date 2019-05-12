@@ -6,7 +6,9 @@
     "build:lib": "vue build -t lib --name easy-go-top -d ./dist/ ./src/index.js",
     "build:docs": "vue-cli-service build",
     "build": "npm run lint && npm run build:docs && npm run build:lib",
-    "serve": "vue-cli-service serve",
+    "serve": "npm run doc",
+    "doc": "vue-cli-service serve --mode dev-doc",
+    "example": "vue-cli-service serve --mode dev-example",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"

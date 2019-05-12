@@ -9,11 +9,17 @@
       <section id="intro">
         <h2>介绍</h2>
         <p>目前 GitHub 上已有不少回到顶部的组件, 但是要不然是可定制化不够, 要不然就是不够简单, 所以就像写一个即能很简单, 但同时很强大的回到顶部的 vue 组件, 根据场景不同, easy-go-top 组件用于以下特性:</p>
-        <ul style="margin-top: 10px">
-          <li>支持全局引入, 并设置全局参数, 使用时无需重复传参</li>
-          <li>支持 js 回到顶部(用于加载数据后, 回到顶部等场景)</li>
-          <li>支持 css 和 js 两种样式覆盖形式, 定制化更容易</li>
-        </ul>
+        <blockquote>
+          <ul>
+            <li>支持全局引入, 并设置全局参数, 使用时无需重复传参</li>
+            <li>支持 js 回到顶部(用于加载数据后, 回到顶部等场景)</li>
+            <li>支持 css 和 js 两种样式覆盖形式, 定制化更容易</li>
+          </ul>
+        </blockquote>
+        <img
+          :src="`${publicPath}example.gif`"
+          alt="vue-auto-text"
+        >
       </section>
       <section id="install">
         <h2>安装</h2>
@@ -62,6 +68,82 @@
       </section>
       <section id="example">
         <h2>示例</h2>
+        <div>
+          <h3>最简单使用</h3>
+          <iframe
+            allowfullscreen="true"
+            allowtransparency="true"
+            frameborder="no"
+            height="265"
+            scrolling="no"
+            src="//codepen.io/dream2023/embed/XwKKry/?height=265&theme-id=dark&default-tab=html,result"
+            style="width: 100%;"
+            title="XwKKry"
+          >
+            See the Pen
+            <a href="https://codepen.io/dream2023/pen/XwKKry/">XwKKry</a> by 二当家的
+            (
+            <a href="https://codepen.io/dream2023">@dream2023</a>) on
+            <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </div>
+        <div>
+          <h3>定制化</h3>
+          <iframe
+            allowfullscreen="true"
+            allowtransparency="true"
+            frameborder="no"
+            height="265"
+            scrolling="no"
+            src="//codepen.io/dream2023/embed/oRLqoj/?height=265&theme-id=dark&default-tab=html,result"
+            style="width: 100%;"
+            title="easy-go-top 定制化"
+          >
+            See the Pen
+            <a href="https://codepen.io/dream2023/pen/oRLqoj/">easy-go-top 定制化</a> by 二当家的
+            (
+            <a href="https://codepen.io/dream2023">@dream2023</a>) on
+            <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </div>
+        <div>
+          <h3>js调用</h3>
+          <iframe
+            allowfullscreen="true"
+            allowtransparency="true"
+            frameborder="no"
+            height="265"
+            scrolling="no"
+            src="//codepen.io/dream2023/embed/QREmxx/?height=265&theme-id=dark&default-tab=html,result"
+            style="width: 100%;"
+            title="easy-go-top 定制化"
+          >
+            See the Pen
+            <a href="https://codepen.io/dream2023/pen/QREmxx/">easy-go-top 定制化</a> by 二当家的
+            (
+            <a href="https://codepen.io/dream2023">@dream2023</a>) on
+            <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </div>
+        <div>
+          <h3>css样式覆盖</h3>
+          <iframe
+            allowfullscreen="true"
+            allowtransparency="true"
+            frameborder="no"
+            height="265"
+            scrolling="no"
+            src="//codepen.io/dream2023/embed/arZGov/?height=265&theme-id=dark&default-tab=css,result"
+            style="width: 100%;"
+            title="easy-go-top 样式覆盖"
+          >
+            See the Pen
+            <a href="https://codepen.io/dream2023/pen/arZGov/">easy-go-top 样式覆盖</a> by 二当家的
+            (
+            <a href="https://codepen.io/dream2023">@dream2023</a>) on
+            <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        </div>
       </section>
       <section id="props">
         <h2>Props参数</h2>
@@ -137,6 +219,31 @@
           </pre>
         </blockquote>
       </section>
+      <section id="reference">
+        <h2>参考链接</h2>
+        <blockquote>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/PanJiaChen/vue-element-admin/tree/master/src/components/BackToTop"
+                target="_blank"
+              >vue-element-admin 全局组件 back-to-top</a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/vfeskov/vanilla-back-to-top"
+                target="_blank"
+              >Vanilla Back To Top</a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/bingoogolapple/bga-back-top-vue"
+                target="_blank"
+              >bga-back-top-vue</a>
+            </li>
+          </ul>
+        </blockquote>
+      </section>
     </easy-github-pages>
   </div>
 </template>
@@ -146,6 +253,7 @@ export default {
   name: 'app',
   data () {
     return {
+      publicPath: process.env.BASE_URL,
       menuList: [
         {
           title: '介绍',
@@ -166,6 +274,10 @@ export default {
         {
           title: 'Props参数',
           href: 'props'
+        },
+        {
+          title: '参考链接',
+          href: 'reference'
         }
       ]
     }
