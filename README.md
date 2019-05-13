@@ -48,7 +48,7 @@ Vue.use(EasyGoTop, {
 
 ```js
 // 局部引入
-import { EasyGoTop, easyGoTopMixin } from 'easy-go-top'
+import { EasyGoTop, easyGoTopMixin } from 'easy-go-top/src/index'
 export default {
   components: {
     EasyGoTop
